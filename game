@@ -1,0 +1,15 @@
+
+retries = 3
+guess = 1
+logic = False
+while not logic:
+    name = input("Guess name of Celebrity : ")
+    if name == 'Keanu Reeves':
+        print(f'You Win in {guess} times')
+        logic = True
+    else:
+        retries -= 1
+        if retries == 0:
+            logic = True
+        print(f"Try Again... only {retries} tries left")
+    guess += 1
